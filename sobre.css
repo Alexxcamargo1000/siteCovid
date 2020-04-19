@@ -1,0 +1,58 @@
+.sobre{
+    margin-bottom: 20px;
+}
+.colum{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto_sobre_mim{
+    width: 50%;
+}
+.texto_sobre_mim p{
+    margin: 10px;
+    text-align: justify;
+    font-size: 16pt;
+}
+div.social{
+    margin-top: 50px;
+    display: flex;
+}
+
+div.social ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div.social li{
+    margin-right: 50px;
+    list-style: none;
+}
+div.social a{
+    padding: 15px;
+   text-decoration: none;
+   color: black;
+   background-color: #0000002a;
+   font-size: 15pt;
+   border-radius: 50px;
+   transition: .3s;
+}
+div.social a:hover{
+    background-color: #00000086;
+    
+ }
+ .font{
+     font-size: 16pt;
+ }
+ @media screen and (max-width: 800px) {
+
+    .texto_sobre_mim{
+        width: 85%;
+    }
+    div.social ul.gmail{
+        flex-direction: column;
+    }
+    div.social ul.gmail li{
+        text-align: center;
+    }
+ }

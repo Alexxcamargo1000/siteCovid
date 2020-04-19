@@ -78,6 +78,9 @@ section{
     min-height: 500px;
     margin-bottom: 10px;
 }
+.sec{
+    height: 100%;
+}
 div.conteudo{
     display: flex;
     flex-direction: row;
@@ -129,15 +132,15 @@ div.row div.item{
     background-color: rgba(0, 0, 0, 0.445);
 }
 
-div.item a{
+div.row div.item a{
     text-decoration: none;
     padding: 15px;
     color:white;
     border-radius: 50px;
     transition: .5s;
 }
-div.item a:hover{
-    font-size: 15pt;
+div.row div.item a:hover{
+    font-size: 14.5pt;
     color: rgb(0, 0, 0);
 }
 
@@ -145,3 +148,119 @@ div.titulo-news{
     text-align: center;
     font-size: 4rem;
 }
+
+div.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.row2 div.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+div.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+div.imagem a{
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+}
+div.imagem a figure:hover img {
+   filter: grayscale(0%);
+}
+
+div.row2 div.item img{
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+div.row2 div.item img:hover{
+    background-color:#000000f8 ;
+}
+div.row2 div.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.row2 div.texto a{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50px;
+    transition: .2s;
+}
+div.row2 div.texto a:hover{
+    color: rgb(0, 116, 131);
+}
+
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*mobal*/
+
+@media screen and (max-width: 1000px) {
+    div.row{
+        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    div.container iframe{
+        width: 100%;
+    }
+    ul.menu{
+        width: 60%;
+  }
+  @media screen and (max-width: 800px) {
+    div.conteudo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    div.titulo{
+        width: auto;
+        height: auto;
+        min-height: 20px;
+        align-items: flex-start;
+    }
+    div.row2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;    
+    }
+    section{
+        height: 100%;
+    }
+    div.row2 div.texto a{
+        font-size: x-large;
+    }
+
+    nav ul{
+        width: 60%;
+    }
+  }
