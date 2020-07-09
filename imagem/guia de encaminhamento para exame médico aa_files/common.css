@@ -1,0 +1,129 @@
+.wowmenu
+{
+    margin-bottom: 0;
+}
+
+@media screen
+and (max-width: 767px)
+and (min-width: 601px)
+{
+    .tinynav {
+        margin-top: -50px;
+    }
+}
+
+.pageheader-default
+{
+    margin-top: 0;
+}
+
+.logo-nav
+{
+    padding-top: 8px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo-nav span
+{
+    color: #555;
+}
+
+.search_frame
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.search_frame input
+{
+    margin-bottom: 0;
+    width: 300px;
+}
+.search_frame button
+{
+    font-size: 14px;
+}
+
+.semiboxshadow img
+{
+    z-index: -1;
+}
+
+.header
+{
+    padding: 5px 15px;
+}
+.header h1
+{
+    display: inline;
+    margin-top: 1px;
+}
+
+.boxcontainer p.desc
+{
+    border-top:1px solid #ebebeb;
+}
+
+.social,
+.social > .social
+{
+    position: static !important;
+}
+
+#viewer
+{
+    border: 1px solid #f5f5f5;
+}
+
+.media
+{
+    text-align: left;
+    border: none;
+    border-top: 3px solid #ededed;
+}
+.media-object
+{
+    max-width: none !important;
+    margin-top: 10px;
+}
+.media-body
+{
+    display: table-cell;
+    border: none;
+}
+.media-heading
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.media-snippet
+{
+    padding: 0;
+}
+
+.btn-right
+{
+    padding-right: 0;
+    font-size: 13px;
+}
+
+.btn-breadcrump
+{
+    margin-top: 1px !important;
+    background-color: #f54828 !important;
+}
+.btn-breadcrump + .btn-breadcrump
+{
+    border-right: 1px solid #f5f5f5 !important;
+}
+.btn-breadcrump.disabled
+{
+    background-color: #f54828 !important;
+    pointer-events: all !important;
+}
+
+.bg-danger
+{
+    padding: 10px;
+}
+
